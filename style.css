@@ -933,10 +933,40 @@ body
         max-width: 100%;
     }
     /* ---------------------------------------------- */
-    
-    .home-content h3:nth-of-type(2){
-        min-width: auto;
+    /* 🌟 1. @keyframes - కేవలం opacity మారుతుంది 🌟 */
+    @keyframes simple-fade-in {
+        0% {
+            opacity: 0;
+            transform: translateY(100px); 
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
+    .home-content h3:nth-of-type(2){
+       /*opacity: 0 !important;*/ 
+        animation: simple-fade-in 1s ease forwards !important;
+        animation-delay: 0.7s !important;
+        height: 60px !important;
+        display: block !important; /* ఇన్నర్ కంటెంట్‌ను అలైన్ చేయడానికి */
+        text-align: left;
+        align-items: flex-start !important; /* టెక్స్ట్ ఎప్పుడూ పైకి కదలకుండా, లైన్ స్టార్టింగ్‌లోనే ఉండేలా */
+        /* 🌟 కొత్త మార్పు: కదలనివ్వకుండా ఉండటానికి 🌟 */
+        overflow: hidden !important; 
+        width: 100% !important; 
+        max-width: 100% !important; /* వెడల్పును మొబైల్ స్క్రీన్‌కు పరిమితం చేయండి */
+        min-width: auto !important;
+        margin-top: 5px !important;
+       
+    }
+    .home-content h3 .text {
+        display: inline !important;
+        white-space: normal !important;
+        min-width: auto !important;
+    }
+
+
     
     /* ABOUT SECTION - దీని లేఅవుట్ మార్చబడలేదు, ఎందుకంటే ఇది సరిగ్గా ఉంది */
     .about {
