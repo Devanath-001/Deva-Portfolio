@@ -53,7 +53,7 @@ body
     font-size: 3.6rem;
     color: #ededed;
     cursor: pointer;
-    display: none; /* పెద్ద స్క్రీన్లలో కనిపించకుండా దాచబడింది */
+    display: none;
 }
 /* ------------------ HOME SECTION LAYOUT FIX ------------------ */
 .home {
@@ -64,8 +64,8 @@ body
     align-items: center;
     min-height: 100vh;
     padding: 70px 4% 0;
-    padding-top: 150px; /* 70px నుండి 150px కి పెంచబడింది */
-    padding-bottom: 50px; /* కిందికి కొద్దిగా స్పేస్ ఇవ్వండి */
+    padding-top: 150px;
+    padding-bottom: 50px;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -80,20 +80,16 @@ body
     animation-delay: .7s;
     min-height: 40px; 
     white-space: nowrap;
-    
-
 }
 .home-content h3:nth-of-type(2){
     margin-bottom: 30px;
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
     min-width: 660px;
-
 }
 .home-content h3 span {
     color: #0ef;
 }
-/* ⭐ GLOW EFFECT (unchanged) ⭐ */
 .profile {
     position: relative;
     right: -10px; 
@@ -104,7 +100,6 @@ body
     justify-content: center;
     padding-bottom: 130px;
 }
-
 .profile::before {
     content: "";
     position: absolute;
@@ -116,7 +111,6 @@ body
     z-index: 1;
     opacity: 1;
 }
-
 .profile::after {
     content: "";
     position: absolute;
@@ -126,7 +120,6 @@ body
     background: #081b29; 
     z-index: 2;
 }
-
 .photo {
     width: 300px;
     height: 300px;
@@ -135,10 +128,7 @@ body
     z-index: 3;
     border: 5px solid white;
     padding: 6px;
-    
 }
-/* Glow effect styles end */
-
 .home-content h1 {
     font-size: 56px;
     font-weight: 700;
@@ -169,7 +159,6 @@ body
     animation: slideLeft 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
     margin: 30px 15px 30px 0;
-
 }
 .home-sci a:hover {
     background: #0ef;
@@ -197,8 +186,6 @@ body
     0 0 25px cyan, 0 0 50px cyan,
     0 0 100px cyan, 0 0 200px cyan
 }
-
-/* ------------------ ABOUT SECTION LAYOUT FIX ------------------ */
 .about {
     display: flex;
     justify-content: space-around; 
@@ -206,7 +193,6 @@ body
     gap: 3rem; 
     padding: 180px 10% 50px; 
 }
-
 .about .profile {
     width: 320px; 
     height: 320px;
@@ -220,23 +206,18 @@ body
     width: fit-content;
 }
 .about .profile::before {
-    /* 330px నుండి 390px కి పెంచబడింది */
     width: 350px; 
     height: 300px; 
 }
 .about .photo {
-    /* 300px నుండి 360px కి పెంచబడింది */
     width: 300px; 
     height: 300px; 
     border-radius: 50%;
-    /* ... మిగతా స్టైల్స్ ... */
 }
-
 .about .about-text {
     order: 2; 
     max-width: 55%; 
 }
-
 .about-text h2 {
     font-size: 50px;
     padding-left: -5px;
@@ -335,17 +316,13 @@ body
 .services-list div:hover {
     transform: translateY(-10px);
 }
-
-/* ------------------ SKILLS SECTION LAYOUT FIX ------------------ */
 .skills-wrapper { 
-    /* Technical and Professional Skills side-by-side */
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
-    gap: 50px; /* రెండు కంటైనర్‌ల మధ్య గ్యాప్ */
+    gap: 50px;
     padding: 0 5%;
 }
-
 .container1 {
     flex: 1;
     min-width: 400px;
@@ -353,9 +330,6 @@ body
     padding: 75px 40px; 
     margin-left: 0; 
 }
-
-/* ... (Technical Skills styles - unchanged) ... */
-
 .heading1 {
     text-align: center;
     text-decoration: underline;
@@ -483,7 +457,6 @@ body
         opacity: 1;
     }
 }
-/* ... (Radial Bars styles - fixed stroke issue) ... */
 .redial-bars{
     width: 100%;
     display: grid;
@@ -491,7 +464,6 @@ body
     gap: 30px;
     justify-content: space-evenly;
     align-items: flex-start;
-
 }
 .radial-bar{
     width: 100%;
@@ -529,7 +501,7 @@ body
     stroke-dashoffset: 502;
     stroke-linecap: round;
 }
-/* యానిమేషన్ కీ-ఫ్రేమ్స్ (unchanged) */
+
 .path-1{animation: animate-path1 1s 1s linear forwards;}
 .path-2{animation: animate-path2 1s 1s linear forwards;}
 .path-3{animation: animate-path3 1s 1s linear forwards;}
@@ -563,8 +535,6 @@ body
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
 }
-/* ... (Project/Portfolio section styles - unchanged) ... */
-
 .main-text{
     padding-top: 150px;
     margin-top: 150px;
@@ -645,8 +615,6 @@ body
 .row:hover .layer{
     height: 100%;
 }
-
-/* ------------------ CONTACT SECTION LAYOUT FIX ------------------ */
 .contact{
     display: flex; 
     justify-content: space-around;
@@ -655,7 +623,6 @@ body
     padding: 100px 6%; 
     margin-top: 130px;
 }
-
 .contact-text h2{
     font-size: 90px;
     line-height: 1;
@@ -723,13 +690,13 @@ body
 }
 .contact-form form{
     position: relative;
-    max-width: 100%; /* max-width సరిచేశాను */
+    max-width: 100%;
 }
 .contact-form form input,
 .contact-form form textarea{
     border: none;
     outline: none;
-    width: 100%; /* ⭐ Full width కోసం సరిచేశాను ⭐ */
+    width: 100%;
     padding: 18px;
     background: #555557;
     color: #000;
@@ -760,13 +727,11 @@ body
     cursor: pointer;
     opacity: 1; 
 }
-
 .contact-form form .send:hover {
     box-shadow: 0 0 5px cyan,
     0 0 25px cyan, 0 0 50px cyan,
     0 0 100px cyan, 0 0 200px cyan
 }
-
 .last-text p{
     width: 100%;
     text-align: center;
@@ -789,7 +754,6 @@ body
     border-radius: 50%; 
 }
 
-/* All Animations are Unchanged */
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
@@ -832,17 +796,14 @@ body
 }
 
 
-/* ⭐⭐⭐ RESPONSIVE DESIGN (మీడియా క్వెరీస్) ⭐⭐⭐ */
+/*RESPONSIVE DESIGN*/
 /* ========================================================================= */
-
 
 /* ------------------ 1. Large Tablets (max-width: 1200px) ------------------ */
 @media (max-width: 1200px) {
     .header {
-        /* ప్యాడింగ్‌ను 10% నుండి 5% కి తగ్గించడం */
         padding: 20px 5%;
     }
-    /* ... (మిగతా 1200px క్వెరీ కోడ్) ... */
     .home {
         padding-left: 5%;
         padding-right: 5%;
@@ -851,7 +812,6 @@ body
         padding: 150px 5% 50px;
     }
     .portfolio-content {
-        /* మూడు కాలమ్స్ నుండి రెండు కాలమ్స్‌కి మార్చడం */
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         padding: 0 5%;
     }
@@ -862,19 +822,16 @@ body
 
 /* ------------------ 2. Tablets (max-width: 992px) ------------------ */
 @media (max-width: 992px) {
-    /* 🌟 1. HEADER ఎత్తును తగ్గించడం 🌟 */
     .header {
-        padding: 12px 4%; /* 20px నుండి 12px కి తగ్గించబడింది */
+        padding: 12px 4%;
     }
-    /* -------------------------------------- */
     .navbar a {
         font-size: 20px;
         margin-left: 10px;
     }
-    
     #menu-icon {
-        display: block; /* చిన్న స్క్రీన్లలో ఐకాన్‌ను చూపించు */
-        font-size: 30px; /* హాంబర్గర్ ఐకాన్ సైజు తగ్గించబడింది */
+        display: block;
+        font-size: 30px;
     }
     .navbar {
         position: absolute;
@@ -904,36 +861,25 @@ body
         opacity: 1;
         transition-delay: .1s;
     }
-
-    /* 🌟 2. HOME SECTION - ఇమేజ్ పైన, కంటెంట్ కింద 🌟 */
     .home {
-        flex-direction: column; /* నిలువుగా పేర్చబడింది */
+        flex-direction: column; 
         padding-top: 100px;
         text-align: center;
         min-height: auto;
     }
-    
-    /* ఇమేజ్ (profile div) ను పైన ఉంచడం (order: 1) */
     .profile {
         order: 1;
         right: 0;
         margin-top: 50px;
-        margin-bottom: 75px; /* ఇమేజ్ మరియు కంటెంట్ మధ్య ఖాళీ */
-        
-        /* మీరు అడిగిన Blue Color సమస్యను పరిష్కరించడానికి padding 0 చేయబడింది */
+        margin-bottom: 75px;
         padding-top: 0; 
         padding-bottom: 0;
-        
-        /* ఈ సెక్షన్‌లో ఉన్న 130px ప్యాడింగ్‌ను తొలగించకుండా కేవలం 0 చేయబడింది */
     }
-    
-    /* కంటెంట్ (home-content div) ను కింద ఉంచడం (order: 2) */
     .home-content {
         order: 2;
         max-width: 100%;
     }
-    /* ---------------------------------------------- */
-    /* 🌟 1. @keyframes - కేవలం opacity మారుతుంది 🌟 */
+  
     @keyframes simple-fade-in {
         0% {
             opacity: 0;
@@ -949,13 +895,12 @@ body
         animation: simple-fade-in 1s ease forwards !important;
         animation-delay: 0.7s !important;
         height: 60px !important;
-        display: block !important; /* ఇన్నర్ కంటెంట్‌ను అలైన్ చేయడానికి */
+        display: block !important;
         text-align: left;
-        align-items: flex-start !important; /* టెక్స్ట్ ఎప్పుడూ పైకి కదలకుండా, లైన్ స్టార్టింగ్‌లోనే ఉండేలా */
-        /* 🌟 కొత్త మార్పు: కదలనివ్వకుండా ఉండటానికి 🌟 */
+        align-items: flex-start !important; 
         overflow: hidden !important; 
         width: 100% !important; 
-        max-width: 100% !important; /* వెడల్పును మొబైల్ స్క్రీన్‌కు పరిమితం చేయండి */
+        max-width: 100% !important;
         min-width: auto !important;
         margin-top: 5px !important;
        
@@ -965,12 +910,8 @@ body
         white-space: normal !important;
         min-width: auto !important;
     }
-
-
-    
-    /* ABOUT SECTION - దీని లేఅవుట్ మార్చబడలేదు, ఎందుకంటే ఇది సరిగ్గా ఉంది */
     .about {
-        flex-direction: column-reverse; /* image పైన, text కింద */
+        flex-direction: column-reverse;
         text-align: center;
         padding-top: 50px;
     }
@@ -979,16 +920,14 @@ body
         height: 250px;
         margin-left: 0;
         margin-bottom: 30px;
-        order: 2; /* order: 2 ఉన్నా, flex-direction: column-reverse వలన ఇమేజ్ పైన వస్తుంది */
+        order: 2;
     }
-    /* అసలు ఇమేజ్ సైజును తగ్గించడం */
     .about .photo {
-        width: 250px; /* Profile width కు సరిపోయేలా */
+        width: 250px;
         height: 250px;
     }
-    /* Glow Effect (::before) సైజును తగ్గించడం */
     .about .profile::before {
-        width: 280px; /* 250px కంటే కొంచెం ఎక్కువ */
+        width: 280px; 
         height: 280px;
     }
     .about .about-text {
@@ -1002,16 +941,12 @@ body
     .about-text .btn-box {
         margin: 20px auto 0;
     }
-
-    /* SERVICES SECTION */
     .container {
         padding: 50px 3%;
     }
     .services-list {
         grid-template-columns: 1fr;
     }
-    
-    /* SKILLS SECTION */
     .skills-wrapper {
         flex-direction: column;
         gap: 20px;
@@ -1023,8 +958,6 @@ body
     .redial-bars {
         grid-template-columns: repeat(2, 1fr); 
     }
-
-    /* CONTACT SECTION */
     .contact {
         flex-direction: column;
         padding: 50px 5%;
@@ -1038,18 +971,12 @@ body
 
 /* ------------------ 3. Mobile (max-width: 576px) ------------------ */
 @media (max-width: 576px) {
-    /* 🌟 1. HEADER ఎత్తును ఇంకా తగ్గించడం 🌟 */
     .header {
-        padding: 10px 4%; /* 10px కి తగ్గించబడింది */
+        padding: 10px 4%;
     }
-    /* ----------------------------------- */
-    
-    /* HEADER */
     .logo {
-        font-size: 18px; /* లోగో సైజు తగ్గించబడింది */
+        font-size: 18px;
     }
-    
-    /* HOME SECTION */
     .home-content h1 {
         font-size: 40px;
     }
@@ -1059,7 +986,6 @@ body
     .home-content p {
         font-size: 16px;
     }
-    /* PROFILE IMAGE GLOW */
     .profile {
         width: 200px;
         height: 200px;
@@ -1070,7 +996,6 @@ body
         filter: blur(20px);
     }
     .profile::after {
-        /* డార్క్ సర్కిల్ ను ఇమేజ్ కు దగ్గరగా మార్చడం */
         width: 230px; 
         height: 230px;
     }
@@ -1083,8 +1008,6 @@ body
         height: 35px;
         font-size: 18px;
     }
-
-    /* ABOUT SECTION */
     .about-text h2 {
         font-size: 40px;
     }
@@ -1095,8 +1018,6 @@ body
         width: 250px; 
         height: 250px;
     }
-
-    /* SERVICES SECTION */
     .sub-title {
         font-size: 45px;
         padding-bottom: 40px;
@@ -1104,8 +1025,6 @@ body
     .services-list div h2 {
         font-size: 24px;
     }
-
-    /* SKILLS SECTION */
     .container1 {
         min-width: 100%;
         padding: 30px 15px;
@@ -1117,8 +1036,6 @@ body
         width: 120px;
         height: 120px;
     }
-    
-    /* PORTFOLIO SECTION */
     .main-text h2 {
         font-size: 45px;
         margin-bottom: 40px;
@@ -1129,8 +1046,6 @@ body
     .row img {
         height: auto;
     }
-
-    /* CONTACT SECTION */
     .contact-text h2 {
         font-size: 55px;
     }

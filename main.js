@@ -8,12 +8,11 @@ var typed = new Typed(".text", {
 });
 
 
-/* ⭐ Navigation Toggle కోసం కొత్త JS కోడ్ ⭐ */
 
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x'); // క్లిక్ చేసినప్పుడు menu icon 'x' గా మారుతుంది
-    navbar.classList.toggle('active');  // navbar కు 'active' class జోడించబడుతుంది
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
 };
