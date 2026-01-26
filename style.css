@@ -394,16 +394,16 @@ body
     width: 85%;
 }
 .progress-line.javascript span {
-    width: 70%;
+    width: 85%;
 }
 .progress-line.react span {
-    width: 75%;
+    width: 80%;
 }
 .progress-line.python span {
-    width: 65%;
+    width: 85%;
 }
 .progress-line.django span {
-    width: 60%;
+    width: 80%;
 }
 .progress-line span::after{
     position: absolute;
@@ -427,16 +427,16 @@ body
     content: "85%";
 }
 .progress-line.javascript span::after{
-    content: "70%";
+    content: "85%";
 }
 .progress-line.react span::after{
-    content: "75%";
+    content: "80%";
 }
 .progress-line.python span::after {
-    content: "65%";
+    content: "85%";
 }
 .progress-line.django span::after {
-    content: "60%";
+    content: "80%";
 }
 .progress-line span::before{
     content: "";
